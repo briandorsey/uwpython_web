@@ -76,7 +76,6 @@ def get_request(stream):
     method = None
     while True:
         line = stream.readline()
-        print line
         if not line.strip(): 
             break
         elif not method: 
