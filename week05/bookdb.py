@@ -1,6 +1,5 @@
 
 
-
 class BookDB():
     def titles(self):
         titles = [dict(id=id, title=database[id]['title']) for id in database.keys()]
@@ -10,8 +9,7 @@ class BookDB():
         return database[id]
 
 
-
-
+# let's pretend we're getting this information from a database somewhere
 database = {
     'id1' : {'title' : 'CherryPy Essentials: Rapid Python Web Application Development',
              'isbn' : '978-1904811848',
