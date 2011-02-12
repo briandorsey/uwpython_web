@@ -472,7 +472,46 @@ In addition to the topics listed below, each week will include:
     <br/>
     <br/>Lightning talks: Sun Hee, Ted
 </td>
-<td><em>[TBD]</em>
+<td>
+    We will be using Django 1.2.5 (current stable)<br/>
+    <br/>
+    <strong>readings:</strong><br/>
+    <a href="http://docs.djangoproject.com/en/1.2/intro/overview/">Django at a glance</a><br/>
+    <a href="http://docs.djangoproject.com/en/1.2/intro/tutorial01/">Django tutorial</a>
+    <ul>
+        <li/>work through django tutorial parts 1, 2 and 3 on your local development machine <br/>
+        <li/>use the Django development server, not anything more complicated<br/>
+        <code>python manage.py runserver</code><br/>
+        <li/>don't configure a database, use the default: sqlite<br/>
+    </ul>
+
+    <pre>
+# local install
+(download http://media.djangoproject.com/releases/1.2/Django-1.2.5.tar.gz)
+tar xvfz Django-1.2.5.tar.gz    (or use 7zip on Windows)
+cd Django-1.2.5/
+python setup.py install
+python
+>>> import django
+>>> django.get_version()
+'1.2.5'
+    </pre>
+    If you want to also install it on our VMs,<br/>
+    Django 1.2.5 is *not* available via apt-get<br/>
+    in Ubuntu 10.4 on our VMs.<br/>
+    <pre>
+# VM install:
+$ wget http://media.djangoproject.com/releases/1.2/Django-1.2.5.tar.gz
+$ tar xvfz Django-1.2.5.tar.gz
+$ cd Django-1.2.5/
+$ sudo python setup.py install
+$ python
+>>> import django
+>>> django.get_version()
+'1.2.5' </pre>
+    
+    <strong>reference:</strong><br/>
+    <a href="http://docs.djangoproject.com/en/1.2/">Django documentation</a>
 </td></tr>
 
 <tr><td>8</td><td>Mar 1</td>
